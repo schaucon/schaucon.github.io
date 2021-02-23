@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css?family=Langar');
+
+body {
+  background: #eb0300;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: 'Langar', sans-serif;
+  font-size: 110%;
+  line-height: 150%;
+}
+
+.card {
+  background: #fdfdfd;
+  border-radius: 8px;
+  height: 85vh;
+  width: 80vw;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+  overflow: hidden;
+}
+
+@media only screen and (min-width: 1000px), (orientation: landscape) {
+  .card { flex-direction: row-reverse; }
+  .card img.tree {
+    width: 100%;
+    max-width: 20vw;
+    max-height: unset;
+  }
+}
+
+img.tree {
+  width: 100%;
+  max-width: 20vw;
+  max-height: unset;
+}
+
+.text { padding: 1em; }
+
+.signed-off {
+  margin-left: 2em;
+  font-size: 80%;
+}
+
+.bold { font-weight: bold; }
+
+* { transition: all 0.25s ease; }
